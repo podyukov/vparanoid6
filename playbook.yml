@@ -8,7 +8,7 @@
   vars:
     sites:
       - "fizfak.com"
-      - "mehmat.com" 
+      - "mehmat.com"
       - "biofak.com"
 
   roles:
