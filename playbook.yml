@@ -1,0 +1,15 @@
+---
+- name: Install nginx with vhosts
+  hosts: webservers
+  become: true
+  become_method: sudo
+  gather_facts: no
+
+  vars:
+    sites:
+    - "fizfak.com"
+    - "mehmat.com"
+    - "biofak.com"
+
+  roles:
+  - nginx_vhosts
