@@ -1,0 +1,10 @@
+name: github runner test
+on:
+  push:
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "я запустился из под ВМ github actions"
+      - run: uptime
+      - run: whoami
