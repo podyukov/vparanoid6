@@ -2,7 +2,7 @@
 - name: Install nginx with vhosts
   hosts: webservers
   become: true
-  become_method: sudo
+  become_method: ansible.builtin.sudo
   gather_facts: no
 
   vars:
